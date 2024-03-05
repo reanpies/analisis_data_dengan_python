@@ -6,7 +6,7 @@ import streamlit as st
 from babel.numbers import format_currency
 sns.set(style='dark')
 
-all_df = pd.read_csv("main_data.csv")
+all_df = pd.read_csv("https://raw.githubusercontent.com/reanpies/analisis_data_dengan_python/main/dashboard/main_data.csv")
 
 datetime_columns = ["order_purchase_timestamp", "order_approved_at", "order_delivered_carrier_date", "order_delivered_customer_date", "order_estimated_delivery_date", "review_creation_date", "review_answer_timestamp", "shipping_limit_date"]
 for column in datetime_columns:
